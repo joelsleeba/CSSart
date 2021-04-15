@@ -1,13 +1,13 @@
 <html>
   <head>
-    <title>Pling!</title>
+    <author>Joel Sleeba</author>
     <style>
       body{
         background-color:#fff;
       }
       body, div{
         margin:0px;
-        height:100vh;
+        height:100%;
         display:grid;
         place-items:center;
       }
@@ -34,32 +34,20 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
       }
 
-      .obj-1{
-        animation: spin 2s cubic-bezier(.45,.05,.55,.95) infinite;
+      .spinXY{
+        animation: spinXY 2s cubic-bezier(.45,.05,.55,.95) infinite;
       }
 
-      .obj-2{
-        animation: spin-inverse 2s cubic-bezier(.45,.05,.55,.95) infinite;
+      .spinX{
+        transform:rotate(0.25turn);
+        animation: spinY 1s cubic-bezier(.45,.05,.55,.95) infinite;
       }
 
-      .obj-3{
-        animation: spin-right-left 1s cubic-bezier(.45,.05,.55,.95) infinite;
+      .spinY{
+        animation: spinY 1s cubic-bezier(.45,.05,.55,.95) infinite;
       }
 
-      .obj-4{
-        animation: spin-top-bottom 1s cubic-bezier(.45,.05,.55,.95) infinite;
-      }
-
-      @keyframes spin-top-bottom{
-        50%{
-          height:0px;
-        }
-        100%{
-          height:100px;
-        }
-      }
-
-      @keyframes spin-right-left{
+      @keyframes spinY{
         50%{
           width:0px;
         }
@@ -68,7 +56,7 @@
         }
       }
 
-      @keyframes spin{
+      @keyframes spinXY{
         0%{
           height:100px;
           width:100px;
@@ -82,27 +70,6 @@
         }
         75%{
           height:0px;
-        }
-        100%{
-          height:100px;
-          width:100px; 
-        } 
-      }
-
-      @keyframes spin-inverse{
-        0%{
-          height:100px;
-          width:100px;
-        }
-        25%{
-          height:0px;
-        }
-        50%{
-          height:100px;
-          width:100px; 
-        }
-        75%{
-          width:0px;
         }
         100%{
           height:100px;
@@ -113,15 +80,15 @@
   </head>
   <body>
     <div class="container">
-       <div class="base"><div class="obj obj-4"></div></div>
-       <div class="base"><div class="obj obj-4"></div></div>
-       <div class="base"><div class="obj obj-1"></div></div>
-       <div class="base"><div class="obj obj-4"></div></div>
-       <div class="base"><div class="obj obj-1"></div></div>
-       <div class="base"><div class="obj obj-3"></div></div>
-       <div class="base"><div class="obj obj-1"></div></div>
-       <div class="base"><div class="obj obj-3"></div></div>
-       <div class="base"><div class="obj obj-3"></div></div>
+       <div class="base"><div class="obj spinX"></div></div>
+       <div class="base"><div class="obj spinX"></div></div>
+       <div class="base"><div class="obj spinXY"></div></div>
+       <div class="base"><div class="obj spinX"></div></div>
+       <div class="base"><div class="obj spinXY"></div></div>
+       <div class="base"><div class="obj spinY"></div></div>
+       <div class="base"><div class="obj spinXY"></div></div>
+       <div class="base"><div class="obj spinY"></div></div>
+       <div class="base"><div class="obj spinY"></div></div>
     </div>
   </body>
 </html>
