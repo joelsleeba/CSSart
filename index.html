@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Heart</title>
+    <meta property="og:title" content="Heart" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/joelsleeba/CartSS/main/src/avatar.jpeg" />
+    <meta property="og:image:width" content="340" />
+    <meta property="og:image:height" content="340" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:description" content="Webpage designed in CSS and HTML" />
+    <meta property="og:url" content="https://joelsleeba.github.io/CartSS/" />
+    <style>
+      body{
+        margin:0;
+        height:100%
+        width:100%;
+        background: #f00;
+      }
+
+      .base{
+        height:400px;
+        width:400px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items:center;
+        background-color:#000;
+      }
+      
+      @media (min-width:480px) and (min-height:480px){
+        .base{
+            width: 360px;
+            height: 360px;
+        }
+      }
+      
+      @media (min-width:720px) and (min-height:720px){
+        .base{
+            width: 550px;
+            height: 550px;
+        }
+      }
+      
+      @media (min-width:1000px) and (min-height:1000px){
+        .base{
+            width: 800px;
+            height: 800px;
+        }
+      }
+
+      .obj{
+        height:50%;
+        width:50%;
+        background:#f00;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        animation: heartbeat 833ms infinite;
+      }
+      
+      @keyframes heartbeat{
+        0%{
+          transform: scale(1);
+        }
+        10%{
+          transform: scale(1.2);
+        }
+        20%{
+          transform: scale(1);
+        }
+        30%{
+          transform: scale(1);
+        }
+        40%{
+          transform: scale(1.1);
+        }
+        50%{
+          transform: scale(1);
+        }
+        100%{
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="base"><a href="pages/abyss.html"><div class="obj"></div></a></div>
+  </body>
+</html>
