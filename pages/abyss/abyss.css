@@ -44,3 +44,10 @@ div{
 .spinY{
   animation: spinY 1s cubic-bezier(.45,.05,.55,.95) infinite;
 }
+
+a{
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items: center;
+}
