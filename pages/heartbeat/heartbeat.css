@@ -1,9 +1,9 @@
 body {
-  background: #f00;
+  background: #ec0101;
 }
 
 .center-base-container{
-  background-color:#000;
+  background-color:#150a0a;
 }
 
 a{
@@ -16,6 +16,6 @@ a{
 .obj{
   height:50%;
   width:50%;
-  background:#f00;
+  background:#ec0101;
   animation: heartbeat 833ms ease-out infinite;
 }
