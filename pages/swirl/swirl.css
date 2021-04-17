@@ -1,0 +1,32 @@
+*{
+  background:#F3AC3C;
+}
+
+@media (hover: hover){
+  .rotate:hover{
+    transform: rotate(-1turn);
+  }
+}
+
+.rotate:active{
+  transform: rotate(-1turn);
+}
+
+.rotate{
+  transition: transform 2s ease;
+}
+
+.pseudo-container{
+  height:100%;
+  width:100%;
+  background:#1A4341;
+}
+
+.obj{
+  height:50%;
+  width:50%;
+}
+
+.pseudo-container>.obj{
+  background:#998235;
+}
