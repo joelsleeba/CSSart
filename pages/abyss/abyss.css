@@ -1,0 +1,46 @@
+div{
+  margin:0px;
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+}
+
+.base-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media (hover: hover){
+  .base:hover .obj{
+    animation-play-state:paused;
+  }
+}
+
+.base:active .obj{
+  animation-play-state:paused;
+}
+
+.base{
+  background-color:#f00;
+}
+
+.obj{
+  height:50%;
+  width:50%;
+  background-color:#222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.spinXY{
+  animation: spinXY 2s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+
+.spinX{
+  animation: spinX 1s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+
+.spinY{
+  animation: spinY 1s cubic-bezier(.45,.05,.55,.95) infinite;
+}
