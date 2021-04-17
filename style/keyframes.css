@@ -1,20 +1,25 @@
 @keyframes heartbeat{
+  /* Systole follows an exponential time curve and diastole follows a linear curve */
+  /* Atrium at rest */
   0%{
     clip-path: polygon(0 0, 100% 0, 96.66% 98.33%, 3.33% 98.33%);
   }
   6.25%{ 
     clip-path: polygon(2.33% 1.16%, 97.66% 1.16%, 97.36% 98.68%, 2.64% 98.68%);
   }
+  /* Atrium at max compression */
   12.5%{
     clip-path: polygon(5% 2.5%, 95% 2.5%, 98.04% 99.03%, 1.94% 99.03%);
   }
+  /* Ventricle at rest */
   25%{
     clip-path: polygon(4.1% 2.05%, 95.9% 2.05%, 100% 100%, 0 100%);
   }
   30%{
     clip-path: polygon(4% 2%, 96% 2%, 96.32% 98.15%, 3.68% 98.85%);
   }
-  40%{;
+  /* Ventricle at max compression */
+  40%{ 
     clip-path: polygon(3.4% 1.7%, 96.6% 1.7%, 90% 95%, 10% 95%);
   }
   100%{
