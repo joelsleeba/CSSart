@@ -16,6 +16,10 @@
   transition: transform 2s ease;
 }
 
+.center-base-container{
+  background: transparent;
+}
+
 .pseudo-container{
   height:100%;
   width:100%;
