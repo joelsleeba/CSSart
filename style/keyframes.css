@@ -1,4 +1,5 @@
 @keyframes heartbeat{
+  /* Oh! don't just wait here. Fork the code and do the thing */
   /* Systole follows an exponential time curve and diastole follows a linear curve */
   /* Atrium at rest */
   0%{
