@@ -34,15 +34,15 @@ div{
 }
 
 .spinXY{
-  animation: spinXY 2s cubic-bezier(.45,.05,.55,.95) infinite;
+  animation: spinXY 1.2s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 .spinX{
-  animation: spinX 1s cubic-bezier(.45,.05,.55,.95) infinite;
+  animation: spinX 0.6s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 .spinY{
-  animation: spinY 1s cubic-bezier(.45,.05,.55,.95) infinite;
+  animation: spinY 0.6s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
 a{
