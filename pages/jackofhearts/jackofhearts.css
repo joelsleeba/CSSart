@@ -1,0 +1,41 @@
+body {
+  background: #ec0101;
+}
+
+div{
+  margin:0px;
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+}
+
+.center-base-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (hover: hover){
+  .base:hover .obj{
+    animation-play-state:paused;
+    background: #150a0a;
+  }
+}
+
+.base:active .obj{
+  animation-play-state:paused;
+  background: #150a0a;
+}
+
+.base{
+  background: #150a0a;
+}
+
+.obj{
+  height:50%;
+  width:50%;
+  background:#ec0101;
+  animation: heartbeat 833ms ease-out infinite;
+  transition: background 833ms ease;
+}
