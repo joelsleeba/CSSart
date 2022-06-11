@@ -1,8 +1,8 @@
-function setup() {
-    createCanvas(windowWidth, windowHeight);
+function setup() { 
   }
   
   function draw() {
+    createCanvas(windowWidth, windowHeight);
     background(0);
     noFill();
     
