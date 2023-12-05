@@ -36,6 +36,7 @@ body{
 
 .clipped {
     overflow: hidden;
+    color:transparent;
     -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
          -o-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
             transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
